@@ -1,0 +1,141 @@
+/* Set box-sizing to border-box and remove margin and padding from all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set the font family, background color, and text color for the body */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f0e0e;
+    color: #fff;
+  }
+  
+  /* Set the maximum width, center the container horizontally, and add padding to the container */
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Add an animation to slide the container in from the bottom */
+    animation: slideInUp 0.5s ease-out;
+  }
+  
+  /* Define the slideInUp animation using keyframes */
+  @keyframes slideInUp {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Set the font size, text alignment, and bottom margin for the heading */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Set the table width to 100%, center it horizontally, and add a bottom margin */
+  table {
+    width: 100%;
+    margin-bottom: 20px;
+    /* Collapse the border between table cells */
+    border-collapse: collapse;
+    /* Add an animation to fade the table in */
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Define the fadeIn animation using keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Set the width, height, text alignment, vertical alignment, font size, and cursor for table cells */
+  td {
+    width: 33.33%;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    cursor: pointer;
+    /* Add a transition effect to smoothly change the background color of cells on hover */
+    transition: all 0.2s ease;
+    /* Add an animation to scale cells in when the page is loaded */
+    animation: scaleIn 0.3s ease-out;
+    /* Set the background color to black */
+    background-color: #000;
+  }
+  
+  /* Define the scaleIn animation using keyframes */
+  @keyframes scaleIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Set the background color of cells to red on hover */
+  td:hover {
+    background-color: #14d987;
+  }
+  
+  /* Set the text color of cells with the 'X' class to red */
+  td.X {
+    color: #f1685e;
+  }
+  
+  /* Set the text color of cells with the 'O' class to black */
+  td.O {
+    color: #000;
+  }
+  
+  /* Set the text alignment, font size, font weight, top margin, padding, background color, and text color for the message */
+  .message {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    /* Set the background color to red */
+    background-color: #7302ca;
+    /* Set the text color to black */
+    color: #000;
+    /* Add an animation to slide the message in from the top */
+    animation: slideInDown 0.5s ease-out;
+  }
+  
+  /* Define the slide*/
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.feedback {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: slideInUp 0.5s ease-out;
+}  
